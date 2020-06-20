@@ -1,0 +1,24 @@
+{
+  "name": "neumorphism",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "su- <aaaiiiuuu35@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@storybook/react": "^5.3.19",
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "@types/storybook__react": "^5.2.1",
+    "babel-loader": "^8.1.0",
+    "path": "^0.12.7",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
+  }
+}
