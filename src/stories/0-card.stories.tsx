@@ -1,5 +1,6 @@
-import * as   React from 'react';
+import * as React from 'react';
 import { Card } from '../components/Card';
+import { StoryWrapper } from '../utilities/StoryWrapper';
 
 export default {
   title: 'Button',
@@ -7,5 +8,5 @@ export default {
 };
 
 export const CardStory = () => {
-  return <Card />
+  return <StoryWrapper color="#55b9f3" ><Card /></StoryWrapper>
 }
