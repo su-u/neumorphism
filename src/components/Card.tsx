@@ -23,12 +23,14 @@ Card.defaultProps = {
   backgroundColor: '#ffffff',
   shadowColor: '#d9d9d9',
   radius: '50px',
-}
+};
 
 const CardContainer = styled('div')`
   border-radius: ${(props: ICardProps) => props.radius};
   background: ${(props: ICardProps) => props.backgroundColor};
-  box-shadow: 20px 20px 60px ${(props: ICardProps) => props.shadowColor};, -20px -20px 60px ${(props: ICardProps) => props.backgroundColor};;
+  box-shadow: 20px 20px 60px ${(props: ICardProps) =>
+    props.shadowColor};, -20px -20px 60px ${(props: ICardProps) =>
+  props.backgroundColor};;
   width: ${(props: ICardProps) => props.width};
   height: ${(props: ICardProps) => props.height};
   display: flex;
