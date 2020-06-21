@@ -7,7 +7,7 @@ export default {
   component: Box,
 };
 
-export const CardStory = () => {
+export const BoxStory = () => {
   return (
     <StoryWrapper color="#fff">
       <Box>neumorphism</Box>
