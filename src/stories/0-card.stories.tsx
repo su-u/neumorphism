@@ -10,7 +10,7 @@ export default {
 export const CardStory = () => {
   return (
     <StoryWrapper color="#55b9f3">
-      <Card />
+      <Card>neumorphism</Card>
     </StoryWrapper>
   );
 };
