@@ -3,7 +3,7 @@ import { Card } from '../components/Card';
 import { StoryWrapper } from '../utilities/StoryWrapper';
 
 export default {
-  title: 'Button',
+  title: 'Card',
   component: Card,
 };
 
