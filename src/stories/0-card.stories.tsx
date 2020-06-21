@@ -9,7 +9,7 @@ export default {
 
 export const CardStory = () => {
   return (
-    <StoryWrapper color="#55b9f3">
+    <StoryWrapper color="#fff">
       <Card>neumorphism</Card>
     </StoryWrapper>
   );

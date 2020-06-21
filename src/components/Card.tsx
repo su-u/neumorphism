@@ -1,20 +1,36 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 
-interface IProps {
+interface ICardProps {
+  backgroundColor?: string;
+  shadowColor?: string;
+  width?: string;
+  height?: string;
+  radius?: string;
+}
+
+interface IProps extends ICardProps {
   children?: React.ReactNode;
 }
 
-export const Card: React.FC<IProps> = ({ children }) => {
-  return <CardContainer>{children}</CardContainer>;
+export const Card: React.FC<IProps> = ({ children, ...cardProps }) => {
+  return <CardContainer {...cardProps}>{children}</CardContainer>;
 };
 
+Card.defaultProps = {
+  width: '300px',
+  height: '300px',
+  backgroundColor: '#ffffff',
+  shadowColor: '#d9d9d9',
+  radius: '50px',
+}
+
 const CardContainer = styled('div')`
-  border-radius: 50px;
-  background: #55b9f3;
-  box-shadow: 20px 20px 60px #489dcf, -20px -20px 60px #62d5ff;
-  width: 300px;
-  height: 300px;
+  border-radius: ${(props: ICardProps) => props.radius};
+  background: ${(props: ICardProps) => props.backgroundColor};
+  box-shadow: 20px 20px 60px ${(props: ICardProps) => props.shadowColor};, -20px -20px 60px ${(props: ICardProps) => props.backgroundColor};;
+  width: ${(props: ICardProps) => props.width};
+  height: ${(props: ICardProps) => props.height};
   display: flex;
   justify-content: center;
   align-items: center;
