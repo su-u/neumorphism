@@ -7,7 +7,7 @@ export default {
   component: Header,
 };
 
-export const BoxStory = () => {
+export const SimpleHeader = () => {
   return (
     <>
       {' '}
