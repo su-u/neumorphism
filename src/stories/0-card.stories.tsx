@@ -8,5 +8,9 @@ export default {
 };
 
 export const CardStory = () => {
-  return <StoryWrapper color="#55b9f3" ><Card /></StoryWrapper>
-}
+  return (
+    <StoryWrapper color="#55b9f3">
+      <Card />
+    </StoryWrapper>
+  );
+};
