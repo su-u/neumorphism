@@ -5,7 +5,7 @@
   "author": "su- <aaaiiiuuu35@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "storybook": "start-storybook -p 9009 -c ./storybook",
+    "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
