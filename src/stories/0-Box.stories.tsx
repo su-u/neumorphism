@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Box } from '../components/Box';
 import { StoryWrapper } from '../utilities/StoryWrapper';
+import { GlobalStyle } from '../components/GlobalStyle';
 
 export default {
   title: 'Box',
@@ -9,8 +10,11 @@ export default {
 
 export const BoxStory = () => {
   return (
-    <StoryWrapper color="#fff">
-      <Box>neumorphism</Box>
-    </StoryWrapper>
+    <>
+      <GlobalStyle />
+      <StoryWrapper color="#fff">
+        <Box>neumorphism</Box>
+      </StoryWrapper>
+    </>
   );
 };

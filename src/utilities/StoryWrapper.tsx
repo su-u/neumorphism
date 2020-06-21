@@ -1,6 +1,10 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 
+interface IWrapperProps {
+  color: string;
+}
+
 interface IProps {
   color: string;
   children: React.ReactNode;
@@ -9,10 +13,6 @@ interface IProps {
 export const StoryWrapper: React.FC<IProps> = ({ color, children }) => {
   return <Wrapper color={color}>{children}</Wrapper>;
 };
-
-interface IWrapperProps {
-  color: string;
-}
 
 const Wrapper = styled('div')`
   display: flex;

@@ -7,6 +7,7 @@ interface IBoxProps {
   width?: string;
   height?: string;
   radius?: string;
+  center?: boolean;
 }
 
 interface IProps extends IBoxProps {
@@ -23,17 +24,17 @@ Box.defaultProps = {
   backgroundColor: '#ffffff',
   shadowColor: '#d9d9d9',
   radius: '50px',
+  center: true,
 };
 
 const BoxContainer = styled('div')`
   border-radius: ${(props: IBoxProps) => props.radius};
   background: ${(props: IBoxProps) => props.backgroundColor};
-  box-shadow: 20px 20px 60px ${(props: IBoxProps) =>
-    props.shadowColor};, -20px -20px 60px ${(props: IBoxProps) =>
-  props.backgroundColor};;
+  box-shadow: 20px 20px 60px ${(props: IBoxProps) => props.shadowColor},
+    -20px -20px 60px ${(props: IBoxProps) => props.backgroundColor};
   width: ${(props: IBoxProps) => props.width};
   height: ${(props: IBoxProps) => props.height};
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${(props: IBoxProps) => (props.center ? 'display: flex' : '')};
+  ${(props: IBoxProps) => (props.center ? 'justify-content: center' : '')};
+  ${(props: IBoxProps) => (props.center ? 'align-items: center' : '')};
 `;
