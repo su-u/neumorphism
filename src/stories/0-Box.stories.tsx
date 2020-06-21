@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { Card } from '../components/Card';
+import { Box } from '../components/Box';
 import { StoryWrapper } from '../utilities/StoryWrapper';
 
 export default {
-  title: 'Card',
-  component: Card,
+  title: 'Box',
+  component: Box,
 };
 
 export const CardStory = () => {
   return (
     <StoryWrapper color="#fff">
-      <Card>neumorphism</Card>
+      <Box>neumorphism</Box>
     </StoryWrapper>
   );
 };
