@@ -19,7 +19,7 @@ module.exports = {
         include: resolveApp('src'),
         options: {
           configFile: `${resolveApp(
-            'storybook/tsconfig'
+            '.storybook/tsconfig'
           )}/tsconfig.storybook.json`,
         },
       },
